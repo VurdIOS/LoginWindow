@@ -15,7 +15,6 @@ final class MainViewController: UIViewController {
     private let userName = "Kama"
     private let userPassword = "Pulya"
     
- 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let welcomeVC = segue.destination as? SecondViewController else { return }
         welcomeVC.welcomeUsersName = userName
@@ -43,7 +42,6 @@ final class MainViewController: UIViewController {
         userNameTF.text = ""
         userPasswordTF.text = ""
     }
-    
 }
 // Extansions...
 // Ниже ужас с переносами, не знаю как правильнее расположить...
@@ -62,7 +60,5 @@ extension MainViewController {
         if login.text != userName && password.text != userPassword {
             showAlert(withTitle: "Opps!", andMessage: "You wrote wrong login or password")
         }
-            
-        
     }
 }
