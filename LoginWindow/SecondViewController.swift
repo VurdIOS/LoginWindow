@@ -7,14 +7,14 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+final class SecondViewController: UIViewController {
+    
+    @IBOutlet var welcomeLabel: UILabel!
 
+    var welcomeUsersName: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-
-        
+        welcomeLabel.text = "Welcome, \(welcomeUsersName ?? "")"
     }
-    
-
 }
