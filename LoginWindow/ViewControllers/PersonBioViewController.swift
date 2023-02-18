@@ -9,10 +9,14 @@ import UIKit
 
 class PersonBioViewController: UIViewController {
 
+    @IBOutlet var bioLabel: UILabel!
+    
+    var textbio: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        bioLabel.text = textbio
 
-        // Do any additional setup after loading the view.
     }
     
 
