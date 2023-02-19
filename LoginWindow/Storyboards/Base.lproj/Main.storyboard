@@ -131,11 +131,21 @@
                                     <segue destination="mv2-nQ-Q5S" kind="unwind" unwindAction="unwindFor:" id="ffV-um-hVS"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="lfA-Pr-g7O">
+                                <rect key="frame" x="110" y="234" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="lfA-Pr-g7O" secondAttribute="height" multiplier="1:1" id="DeQ-X3-OaD"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="F0B-J3-bkc"/>
                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                         <constraints>
                             <constraint firstItem="mmh-zr-GFa" firstAttribute="top" secondItem="F0B-J3-bkc" secondAttribute="top" constant="170" id="We8-1G-7Im"/>
+                            <constraint firstItem="lfA-Pr-g7O" firstAttribute="width" secondItem="6zs-K5-Rhm" secondAttribute="height" multiplier="25:142" id="X5j-ZM-gQb"/>
+                            <constraint firstItem="lfA-Pr-g7O" firstAttribute="centerX" secondItem="6zs-K5-Rhm" secondAttribute="centerX" id="b1A-gj-hKm"/>
+                            <constraint firstItem="YvH-WR-n7A" firstAttribute="top" secondItem="lfA-Pr-g7O" secondAttribute="bottom" constant="38" id="eAK-6Q-eqU"/>
+                            <constraint firstItem="lfA-Pr-g7O" firstAttribute="top" secondItem="mmh-zr-GFa" secondAttribute="bottom" constant="31.5" id="fGh-Xp-j5D"/>
                             <constraint firstItem="YvH-WR-n7A" firstAttribute="centerX" secondItem="6zs-K5-Rhm" secondAttribute="centerX" id="fUg-Me-grS"/>
                             <constraint firstItem="F0B-J3-bkc" firstAttribute="bottom" secondItem="YvH-WR-n7A" secondAttribute="bottom" constant="111" id="rkG-iz-Ahc"/>
                             <constraint firstItem="mmh-zr-GFa" firstAttribute="centerX" secondItem="6zs-K5-Rhm" secondAttribute="centerX" id="ypz-Ij-UoA"/>
@@ -182,8 +192,8 @@
                                     <constraint firstAttribute="width" secondItem="e3f-mo-Evv" secondAttribute="height" multiplier="1:1" id="Kdj-S3-bjl"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="lHc-BK-ZgP">
-                                <rect key="frame" x="16" y="217.5" width="110" height="134.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="lHc-BK-ZgP">
+                                <rect key="frame" x="16" y="232.5" width="110" height="182.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lsn-wR-mdr">
                                         <rect key="frame" x="0.0" y="0.0" width="38" height="20.5"/>
@@ -192,32 +202,32 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Фамилия:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EJr-9u-NBx">
-                                        <rect key="frame" x="0.0" y="28.5" width="77.5" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="40.5" width="77.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Организация:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H52-uV-j2V">
-                                        <rect key="frame" x="0.0" y="57" width="110" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="81" width="110" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Отдел:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bes-Ma-z9O">
-                                        <rect key="frame" x="0.0" y="85.5" width="54" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="121.5" width="54" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Должность:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCW-PC-UM5">
-                                        <rect key="frame" x="0.0" y="114" width="94" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="162" width="94" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="134.5" id="5Cl-iq-tAS"/>
+                                    <constraint firstAttribute="height" constant="182.5" id="fB5-s4-1Df"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -227,7 +237,7 @@
                             <constraint firstItem="e3f-mo-Evv" firstAttribute="centerX" secondItem="2ab-nj-qmO" secondAttribute="centerX" id="BCG-rv-gaN"/>
                             <constraint firstItem="e3f-mo-Evv" firstAttribute="top" secondItem="avX-rv-0e4" secondAttribute="top" id="Uzf-nO-RfD"/>
                             <constraint firstItem="lHc-BK-ZgP" firstAttribute="leading" secondItem="avX-rv-0e4" secondAttribute="leading" constant="16" id="ZVW-Kc-NaV"/>
-                            <constraint firstItem="lHc-BK-ZgP" firstAttribute="top" secondItem="e3f-mo-Evv" secondAttribute="bottom" constant="25" id="rtK-nN-oPV"/>
+                            <constraint firstItem="lHc-BK-ZgP" firstAttribute="top" secondItem="e3f-mo-Evv" secondAttribute="bottom" constant="40" id="rtK-nN-oPV"/>
                             <constraint firstItem="e3f-mo-Evv" firstAttribute="height" secondItem="2ab-nj-qmO" secondAttribute="height" multiplier="0.176056" id="yno-J7-jrg"/>
                         </constraints>
                     </view>
@@ -274,9 +284,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="K8t-ZP-dnL" firstAttribute="trailing" secondItem="Qfw-1n-aSh" secondAttribute="trailing" constant="16" id="37R-iZ-td3"/>
-                            <constraint firstItem="Qfw-1n-aSh" firstAttribute="top" secondItem="kn2-QX-49j" secondAttribute="top" constant="92" id="4eU-IF-FQe"/>
+                            <constraint firstItem="Qfw-1n-aSh" firstAttribute="top" secondItem="K8t-ZP-dnL" secondAttribute="top" constant="-0.5" id="4eU-IF-FQe"/>
                             <constraint firstItem="Qfw-1n-aSh" firstAttribute="leading" secondItem="K8t-ZP-dnL" secondAttribute="leading" constant="16" id="Djb-KD-EOF"/>
-                            <constraint firstItem="Qfw-1n-aSh" firstAttribute="centerX" secondItem="kn2-QX-49j" secondAttribute="centerX" id="pgB-MH-ps4"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="W7A-hO-vPM"/>
@@ -309,6 +318,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="1" width="160" height="160"/>
         <image name="info.circle" catalog="system" width="128" height="123"/>
         <image name="paperplane" catalog="system" width="128" height="119"/>
         <systemColor name="linkColor">
