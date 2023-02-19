@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PersonBioViewController: UIViewController {
+final class PersonBioViewController: UIViewController {
 
     @IBOutlet var bioLabel: UILabel!
     

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PersonInfoViewController: UIViewController {
+final class PersonInfoViewController: UIViewController {
 
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var surnameLabel: UILabel!
@@ -30,11 +30,6 @@ class PersonInfoViewController: UIViewController {
         personPhotoView.image = UIImage(named: person.photo)
     }
     
-
-
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let bioVC = segue.destination as? PersonBioViewController else { return }
         bioVC.textbio = person.bio

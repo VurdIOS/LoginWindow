@@ -232,7 +232,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="avX-rv-0e4"/>
-                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                        <color key="backgroundColor" red="0.43509216186474581" green="0.73687537515006007" blue="0.60438425370148063" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="e3f-mo-Evv" firstAttribute="centerX" secondItem="2ab-nj-qmO" secondAttribute="centerX" id="BCG-rv-gaN"/>
                             <constraint firstItem="e3f-mo-Evv" firstAttribute="top" secondItem="avX-rv-0e4" secondAttribute="top" id="Uzf-nO-RfD"/>
@@ -326,9 +326,6 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBrownColor">
-            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
