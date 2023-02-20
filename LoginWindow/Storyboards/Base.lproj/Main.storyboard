@@ -131,21 +131,20 @@
                                     <segue destination="mv2-nQ-Q5S" kind="unwind" unwindAction="unwindFor:" id="ffV-um-hVS"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="lfA-Pr-g7O">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="helloEmoji" translatesAutoresizingMaskIntoConstraints="NO" id="lfA-Pr-g7O">
                                 <rect key="frame" x="110" y="234" width="100" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="lfA-Pr-g7O" secondAttribute="height" multiplier="1:1" id="DeQ-X3-OaD"/>
+                                    <constraint firstAttribute="height" constant="100" id="G9H-8J-kF2"/>
+                                    <constraint firstAttribute="width" constant="100" id="dU3-VL-u0D"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="F0B-J3-bkc"/>
                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                         <constraints>
+                            <constraint firstItem="lfA-Pr-g7O" firstAttribute="centerX" secondItem="6zs-K5-Rhm" secondAttribute="centerX" id="7bb-76-eYV"/>
+                            <constraint firstItem="lfA-Pr-g7O" firstAttribute="centerY" secondItem="6zs-K5-Rhm" secondAttribute="centerY" id="IFd-aK-E14"/>
                             <constraint firstItem="mmh-zr-GFa" firstAttribute="top" secondItem="F0B-J3-bkc" secondAttribute="top" constant="170" id="We8-1G-7Im"/>
-                            <constraint firstItem="lfA-Pr-g7O" firstAttribute="width" secondItem="6zs-K5-Rhm" secondAttribute="height" multiplier="25:142" id="X5j-ZM-gQb"/>
-                            <constraint firstItem="lfA-Pr-g7O" firstAttribute="centerX" secondItem="6zs-K5-Rhm" secondAttribute="centerX" id="b1A-gj-hKm"/>
-                            <constraint firstItem="YvH-WR-n7A" firstAttribute="top" secondItem="lfA-Pr-g7O" secondAttribute="bottom" constant="38" id="eAK-6Q-eqU"/>
-                            <constraint firstItem="lfA-Pr-g7O" firstAttribute="top" secondItem="mmh-zr-GFa" secondAttribute="bottom" constant="31.5" id="fGh-Xp-j5D"/>
                             <constraint firstItem="YvH-WR-n7A" firstAttribute="centerX" secondItem="6zs-K5-Rhm" secondAttribute="centerX" id="fUg-Me-grS"/>
                             <constraint firstItem="F0B-J3-bkc" firstAttribute="bottom" secondItem="YvH-WR-n7A" secondAttribute="bottom" constant="111" id="rkG-iz-Ahc"/>
                             <constraint firstItem="mmh-zr-GFa" firstAttribute="centerX" secondItem="6zs-K5-Rhm" secondAttribute="centerX" id="ypz-Ij-UoA"/>
@@ -167,7 +166,7 @@
                 <navigationController id="cDj-RE-8Z4" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Info" image="info.circle" catalog="system" id="Wuc-jE-y19"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="KKN-eA-dJs">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="92.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="98.5"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -186,14 +185,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e3f-mo-Evv">
-                                <rect key="frame" x="110" y="92.5" width="100" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="e3f-mo-Evv" secondAttribute="height" multiplier="1:1" id="Kdj-S3-bjl"/>
-                                </constraints>
-                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="lHc-BK-ZgP">
-                                <rect key="frame" x="16" y="232.5" width="110" height="182.5"/>
+                                <rect key="frame" x="16" y="257.5" width="110" height="182.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lsn-wR-mdr">
                                         <rect key="frame" x="0.0" y="0.0" width="38" height="20.5"/>
@@ -230,15 +223,21 @@
                                     <constraint firstAttribute="height" constant="182.5" id="fB5-s4-1Df"/>
                                 </constraints>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e3f-mo-Evv">
+                                <rect key="frame" x="110" y="92.5" width="100" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="e3f-mo-Evv" secondAttribute="height" multiplier="80:100" id="fkA-Rj-pPN"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="avX-rv-0e4"/>
                         <color key="backgroundColor" red="0.43509216186474581" green="0.73687537515006007" blue="0.60438425370148063" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="e3f-mo-Evv" firstAttribute="centerX" secondItem="2ab-nj-qmO" secondAttribute="centerX" id="BCG-rv-gaN"/>
-                            <constraint firstItem="e3f-mo-Evv" firstAttribute="top" secondItem="avX-rv-0e4" secondAttribute="top" id="Uzf-nO-RfD"/>
+                            <constraint firstItem="e3f-mo-Evv" firstAttribute="width" secondItem="2ab-nj-qmO" secondAttribute="height" multiplier="25:142" id="7mF-Bj-w1H"/>
+                            <constraint firstItem="e3f-mo-Evv" firstAttribute="top" secondItem="avX-rv-0e4" secondAttribute="top" id="MgX-PN-emp"/>
+                            <constraint firstItem="e3f-mo-Evv" firstAttribute="centerX" secondItem="2ab-nj-qmO" secondAttribute="centerX" id="Pll-oR-tXn"/>
                             <constraint firstItem="lHc-BK-ZgP" firstAttribute="leading" secondItem="avX-rv-0e4" secondAttribute="leading" constant="16" id="ZVW-Kc-NaV"/>
-                            <constraint firstItem="lHc-BK-ZgP" firstAttribute="top" secondItem="e3f-mo-Evv" secondAttribute="bottom" constant="40" id="rtK-nN-oPV"/>
-                            <constraint firstItem="e3f-mo-Evv" firstAttribute="height" secondItem="2ab-nj-qmO" secondAttribute="height" multiplier="0.176056" id="yno-J7-jrg"/>
+                            <constraint firstItem="lHc-BK-ZgP" firstAttribute="top" secondItem="e3f-mo-Evv" secondAttribute="bottom" constant="40" id="nmS-3y-8JS"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Info" image="info.circle" catalog="system" id="ueQ-0d-19h"/>
@@ -270,7 +269,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qfw-1n-aSh">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qfw-1n-aSh">
                                 <rect key="frame" x="16" y="92" width="288" height="20.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="288" id="ver-mo-r3Q"/>
@@ -318,7 +317,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="1" width="160" height="160"/>
+        <image name="helloEmoji" width="160" height="160"/>
         <image name="info.circle" catalog="system" width="128" height="123"/>
         <image name="paperplane" catalog="system" width="128" height="119"/>
         <systemColor name="linkColor">

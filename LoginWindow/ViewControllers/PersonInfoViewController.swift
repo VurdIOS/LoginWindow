@@ -16,23 +16,25 @@ final class PersonInfoViewController: UIViewController {
     @IBOutlet var positionLabel: UILabel!
     @IBOutlet var personPhotoView: UIImageView!
     
-    var person: Person!
+    var person: User! 
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        nameLabel.text = "Name: \(person.name)"
-        surnameLabel.text = "Surname: \(person.surname)"
-        companyLabel.text = "Company: \(person.company)"
-        departmentLabel.text = "Department: \(person.department)"
-        positionLabel.text = "Position: \(person.position)"
-        personPhotoView.image = UIImage(named: person.photo)
+        personPhotoView.layer.cornerRadius = personPhotoView.frame.width / 2
+        
+        nameLabel.text = "Name: \(person.person.name)"
+        surnameLabel.text = "Surname: \(person.person.surname)"
+        companyLabel.text = "Company: \(person.person.company.company)"
+        departmentLabel.text = "Department: \(person.person.company.department)"
+        positionLabel.text = "Position: \(person.person.company.position)"
+        personPhotoView.image = UIImage(named: person.person.photo)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let bioVC = segue.destination as? PersonBioViewController else { return }
-        bioVC.textbio = person.bio
+        bioVC.textbio = person.person.bio
         
     }
 

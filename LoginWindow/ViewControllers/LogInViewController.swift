@@ -15,7 +15,7 @@ final class LogInViewController: UIViewController {
     private let userName = "Kama"
     private let userPassword = "1"
     
-    let kamal = Person.getPerson()
+   private let kamal = User.initUser()
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -24,7 +24,7 @@ final class LogInViewController: UIViewController {
         
         viewControllers.forEach { viewController in
             if let welcomeVC = viewController as? WelcomeViewController {
-                welcomeVC.welcomeUsersName = kamal.name
+                welcomeVC.welcomeUsersName = kamal.person.name
             } else if let navigationVC = viewController as? UINavigationController {
                 guard let infoVC = navigationVC.topViewController as? PersonInfoViewController else { return }
                 infoVC.person = kamal
@@ -70,7 +70,7 @@ extension LogInViewController {
     }
 
     private func checkUsers(_ login: UITextField, _ password: UITextField) {
-        if login.text == userName || password.text == userPassword {
+        if login.text == kamal.login, password.text == kamal.password {
             performSegue(withIdentifier: "goToWelcomeVC", sender: nil)
         } else {
             showAlert(withTitle: "Opps!", andMessage: "You wrote wrong login or password")

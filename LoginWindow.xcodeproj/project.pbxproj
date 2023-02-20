@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A189B1529A128D3000BDF35 /* PersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A189B1429A128D3000BDF35 /* PersonModel.swift */; };
+		3A189B1529A128D3000BDF35 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A189B1429A128D3000BDF35 /* User.swift */; };
 		3A774D9B299E9F8D00BF4273 /* PersonInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A774D9A299E9F8D00BF4273 /* PersonInfoViewController.swift */; };
 		3A774D9D299E9FAC00BF4273 /* PersonBioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A774D9C299E9FAC00BF4273 /* PersonBioViewController.swift */; };
 		3A774D9F299EB4CA00BF4273 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A774D9E299EB4CA00BF4273 /* TabBarViewController.swift */; };
@@ -21,7 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3A189B1429A128D3000BDF35 /* PersonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonModel.swift; sourceTree = "<group>"; };
+		3A189B1429A128D3000BDF35 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3A774D9A299E9F8D00BF4273 /* PersonInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInfoViewController.swift; sourceTree = "<group>"; };
 		3A774D9C299E9FAC00BF4273 /* PersonBioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonBioViewController.swift; sourceTree = "<group>"; };
 		3A774D9E299EB4CA00BF4273 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
@@ -81,7 +81,7 @@
 		3A01D4F4299E91FE00CC177B /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				3A189B1429A128D3000BDF35 /* PersonModel.swift */,
+				3A189B1429A128D3000BDF35 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -189,7 +189,7 @@
 				3AEB68C2299ABFB400235C71 /* WelcomeViewController.swift in Sources */,
 				3A774D9D299E9FAC00BF4273 /* PersonBioViewController.swift in Sources */,
 				3A774D9B299E9F8D00BF4273 /* PersonInfoViewController.swift in Sources */,
-				3A189B1529A128D3000BDF35 /* PersonModel.swift in Sources */,
+				3A189B1529A128D3000BDF35 /* User.swift in Sources */,
 				3AEB68B2299AB32600235C71 /* LogInViewController.swift in Sources */,
 				3AEB68AE299AB32600235C71 /* AppDelegate.swift in Sources */,
 				3AEB68B0299AB32600235C71 /* SceneDelegate.swift in Sources */,
